@@ -86,6 +86,14 @@
             layers = <0>;
             require-prior-idle-ms = <1000>;
         };
+
+        WinChangeLanguage {
+            bindings = <&kp A>;
+            key-positions = <39 41>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <20>;
+            layers = <0>;
+        };
     };
 
     macros {
