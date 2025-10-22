@@ -114,7 +114,7 @@
         default_layer {
             bindings = <
 &kp Q   &kp W           &kp E         &kp R               &kp T                                                                  &kp Y                 &kp U  &kp I      &lt 5 O  &kp P
-&kp A   &kp S           &kp D         &lt 4 F             &kp G                   &kp BACKSPACE             &kp DELETE           &kp H                 &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp A   &kp S           &kp D         &lt_to_layer_0 4 F  &kp G                   &kp GRAVE                 &tog 4               &kp H                 &kp J  &kp K      &kp L    &kp SEMICOLON
 &kp Z   &kp X           &kp C         &kp V               &kp B                   &lt_to_layer_0 6 TAB      &lt 3 JP_UNDERSCORE  &kp N                 &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &gresc  &kp INT_HENKAN  &kp CAPSLOCK  &mt LEFT_GUI MINUS  &mt LEFT_ALT BACKSPACE  &mt LCTRL DELETE          &lt 2 ENTER          &mt LEFT_SHIFT SPACE                             &kp JP_YEN
             >;
@@ -158,10 +158,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP    &trans                      &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans          &trans           &trans         &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans          &trans           &trans         &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
