@@ -113,10 +113,10 @@
 
         default_layer {
             bindings = <
-&kp Q   &kp W           &kp E  &kp R                   &kp T                                                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A   &kp S           &kp D  &kp F                   &kp G                &kp BACKSPACE                  &kp DELETE            &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z   &kp X           &kp C  &kp V                   &kp B                &lt_to_layer_0 6 KP_MINUS      &kp JP_UNDERSCORE     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&gresc  &kp INT_HENKAN  &none  &mt LEFT_GUI BACKSPACE  &mt LEFT_ALT DELETE  &mt LCTRL MINUS                &mt LEFT_SHIFT ENTER  &lt 2 SPACE                             &kp JP_YEN
+&kp Q   &kp W           &kp E    &kp R                   &kp T                                                                     &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A   &kp S           &kp D    &lt 4 F                 &kp G                &kp BACKSPACE                  &kp DELETE            &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Z   &kp X           &kp C    &kp V                   &kp B                &lt_to_layer_0 6 KP_MINUS      &kp JP_UNDERSCORE     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&gresc  &kp INT_HENKAN  &kp TAB  &mt LEFT_GUI BACKSPACE  &mt LEFT_ALT DELETE  &mt LCTRL MINUS                &mt LEFT_SHIFT ENTER  &lt 2 SPACE                             &kp JP_YEN
             >;
         };
 
@@ -151,10 +151,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans    &trans    &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &mkp MB4  &mkp MB5  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans    &trans    &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans    &trans    &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
