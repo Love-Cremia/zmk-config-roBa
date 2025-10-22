@@ -131,22 +131,20 @@
 
         NUMBER_AND_FUNCTION {
             bindings = <
-&kp F11   &kp F12    &trans        &kp BACKSPACE  &kp DELETE                                        &kp SPACE     &kp N7  &kp N8  &kp N9  &kp BACKSPACE
+&kp F11   &kp F12    &kp SPACE     &kp BACKSPACE  &kp DELETE                                        &kp PERCENT   &kp N7  &kp N8  &kp N9  &kp BACKSPACE
 &kp F6    &kp F7     &kp F8        &kp F9         &kp F10         &kp UP_ARROW        &kp JP_TILDE  &kp JP_EQUAL  &kp N4  &kp N5  &kp N6  &kp COMMA
 &kp F1    &kp F2     &kp F3        &kp F4         &kp F5          &kp DOWN_ARROW      &kp JP_CARET  &kp N0        &kp N1  &kp N2  &kp N3  &kp DOT
-&kp PLUS  &kp MINUS  &kp ASTERISK  &kp SLASH      &kp LEFT_ARROW  &kp RIGHT           &trans        &trans                                &kp DELETE
+&kp PLUS  &kp MINUS  &kp ASTERISK  &kp SLASH      &kp LEFT_ARROW  &kp RIGHT           &none         &trans                                &kp DELETE
             >;
         };
 
         SYMBOLS {
             bindings = <
-&trans     &kp JP_DQUOTE  &trans  &trans  &trans                      &kp JP_AMPERSAND  &kp JP_EQUAL      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE
-&kp JP_AT  &kp JP_QUOTE   &trans  &trans  &trans  &trans      &trans  &trans            &kp JP_BACKQUOTE  &kp JP_LBRACE    &kp JP_RBRACE    &trans
-&trans     &kp JP_COLON   &trans  &trans  &trans  &trans      &trans  &trans            &trans            &kp JP_LBRACKET  &kp JP_RBRACKET  &trans
-&trans     &trans         &trans  &trans  &trans  &trans      &trans  &trans                                                                &trans
+&kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp JP_AMPERSAND  &kp JP_EQUAL      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE
+&kp JP_AT        &kp JP_QUOTE   &trans    &trans      &trans       &trans      &trans  &trans            &kp JP_BACKQUOTE  &kp JP_LBRACE    &kp JP_RBRACE    &trans
+&trans           &kp JP_COLON   &trans    &trans      &trans       &trans      &trans  &trans            &trans            &kp JP_LBRACKET  &kp JP_RBRACKET  &trans
+&trans           &trans         &trans    &trans      &trans       &trans      &trans  &trans                                                                &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
