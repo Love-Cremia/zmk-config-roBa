@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -78,6 +79,13 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        ToggleToL1 {
+            bindings = <&tog 1>;
+            key-positions = <11 15>;
+            layers = <0>;
+            require-prior-idle-ms = <1000>;
+        };
     };
 
     macros {
@@ -105,30 +113,28 @@
 
         default_layer {
             bindings = <
-&kp Q   &kp W           &kp E  &kp R         &kp T                                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A   &kp S           &kp D  &kp F         &kp G         &kp BACKSPACE                  &kp GRAVE       &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z   &kp X           &kp C  &kp V         &kp B         &lt_to_layer_0 6 KP_MINUS      &kp ENTER       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&gresc  &kp INT_HENKAN  &none  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL                      &kp LEFT_SHIFT  &lt 2 SPACE                             &kt DELETE
+&kp Q   &kp W           &kp E                     &kp R         &kp T                                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A   &kp S           &kp D                     &kp F         &kp G         &kp BACKSPACE                  &kp GRAVE       &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Z   &kp X           &kp C                     &kp V         &kp B         &lt_to_layer_0 6 KP_MINUS      &kp ENTER       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&gresc  &kp INT_HENKAN  &mt BACKSLASH UNDERSCORE  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL                      &kp LEFT_SHIFT  &lt 2 SPACE                             &kt DELETE
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        FUNCTION {
+        Mac_and_iPad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &trans  &trans     &trans                            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp LCTRL  &trans  &kp LEFT_GUI      &trans  &trans                          &trans
             >;
         };
 
         NUMBER_AND_FUNCTION {
             bindings = <
-&kp F11   &kp F12    &trans        &trans     &trans                                      &kp SPACE  &kp N7  &kp N8  &kp N9  &trans
-&kp F6    &kp F7     &kp F8        &kp F9     &kp F10         &kp UP_ARROW        &trans  &trans     &kp N4  &kp N5  &kp N6  &kp COMMA
-&kp F1    &kp F2     &kp F3        &kp F4     &kp F5          &kp DOWN_ARROW      &trans  &kp N0     &kp N1  &kp N2  &kp N3  &kp DOT
-&kp PLUS  &kp MINUS  &kp ASTERISK  &kp SLASH  &kp LEFT_ARROW  &kp RIGHT           &trans  &trans                             &kp BACKSPACE
+&kp F11   &kp F12    &trans        &kp BACKSPACE  &kp DELETE                                  &kp SPACE  &kp N7  &kp N8  &kp N9  &kp BACKSPACE
+&kp F6    &kp F7     &kp F8        &kp F9         &kp F10         &kp UP_ARROW        &trans  &trans     &kp N4  &kp N5  &kp N6  &kp COMMA
+&kp F1    &kp F2     &kp F3        &kp F4         &kp F5          &kp DOWN_ARROW      &trans  &kp N0     &kp N1  &kp N2  &kp N3  &kp DOT
+&kp PLUS  &kp MINUS  &kp ASTERISK  &kp SLASH      &kp LEFT_ARROW  &kp RIGHT           &trans  &trans                             &kp DELETE
             >;
         };
 
