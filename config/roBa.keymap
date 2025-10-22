@@ -113,19 +113,19 @@
 
         default_layer {
             bindings = <
-&kp Q   &kp W           &kp E                     &kp R         &kp T                                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A   &kp S           &kp D                     &kp F         &kp G         &kp BACKSPACE                  &kp GRAVE       &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z   &kp X           &kp C                     &kp V         &kp B         &lt_to_layer_0 6 KP_MINUS      &kp ENTER       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&gresc  &kp INT_HENKAN  &mt BACKSLASH UNDERSCORE  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL                      &kp LEFT_SHIFT  &lt 2 SPACE                             &kt DELETE
+&kp Q   &kp W           &kp E         &kp R                   &kp T                                                                &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A   &kp S           &kp D         &lt 4 F                 &kp G                &kp BACKSPACE             &kp DELETE            &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Z   &kp X           &kp C         &kp V                   &kp B                &lt_to_layer_0 6 TAB      &lt 3 A               &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&gresc  &kp INT_HENKAN  &kp CAPSLOCK  &mt LEFT_GUI BACKSPACE  &mt LEFT_ALT DELETE  &mt LCTRL MINUS           &mt LEFT_SHIFT ENTER  &lt 2 SPACE                             &kp JP_YEN
             >;
         };
 
         Mac_and_iPad {
             bindings = <
-&trans  &trans  &trans  &trans     &trans                            &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp LCTRL  &trans  &kp LEFT_GUI      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans               &trans                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans               &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans               &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &mt LCTRL BACKSPACE  &trans  &mt LEFT_GUI MINUS      &trans  &trans                          &trans
             >;
         };
 
@@ -138,7 +138,7 @@
             >;
         };
 
-        ARROW {
+        SYMBOLS {
             bindings = <
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -151,10 +151,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans    &trans    &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &mkp MB4  &mkp MB5  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans    &trans    &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans    &trans    &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
