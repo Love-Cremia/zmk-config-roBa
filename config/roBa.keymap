@@ -115,7 +115,7 @@
             bindings = <
 &kp Q   &kp W           &kp E         &kp R                   &kp T                                                                &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A   &kp S           &kp D         &lt 4 F                 &kp G                &kp BACKSPACE             &kp DELETE            &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z   &kp X           &kp C         &kp V                   &kp B                &lt_to_layer_0 6 TAB      &lt 3 A               &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp Z   &kp X           &kp C         &kp V                   &kp B                &lt_to_layer_0 6 TAB      &lt 3 JP_UNDERSCORE   &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &gresc  &kp INT_HENKAN  &kp CAPSLOCK  &mt LEFT_GUI BACKSPACE  &mt LEFT_ALT DELETE  &mt LCTRL MINUS           &mt LEFT_SHIFT ENTER  &lt 2 SPACE                             &kp JP_YEN
             >;
         };
@@ -131,19 +131,19 @@
 
         NUMBER_AND_FUNCTION {
             bindings = <
-&kp F11   &kp F12    &trans        &kp BACKSPACE  &kp DELETE                                  &kp SPACE  &kp N7  &kp N8  &kp N9  &kp BACKSPACE
-&kp F6    &kp F7     &kp F8        &kp F9         &kp F10         &kp UP_ARROW        &trans  &trans     &kp N4  &kp N5  &kp N6  &kp COMMA
-&kp F1    &kp F2     &kp F3        &kp F4         &kp F5          &kp DOWN_ARROW      &trans  &kp N0     &kp N1  &kp N2  &kp N3  &kp DOT
-&kp PLUS  &kp MINUS  &kp ASTERISK  &kp SLASH      &kp LEFT_ARROW  &kp RIGHT           &trans  &trans                             &kp DELETE
+&kp F11   &kp F12    &trans        &kp BACKSPACE  &kp DELETE                                        &kp SPACE     &kp N7  &kp N8  &kp N9  &kp BACKSPACE
+&kp F6    &kp F7     &kp F8        &kp F9         &kp F10         &kp UP_ARROW        &kp JP_TILDE  &kp JP_EQUAL  &kp N4  &kp N5  &kp N6  &kp COMMA
+&kp F1    &kp F2     &kp F3        &kp F4         &kp F5          &kp DOWN_ARROW      &kp JP_CARET  &kp N0        &kp N1  &kp N2  &kp N3  &kp DOT
+&kp PLUS  &kp MINUS  &kp ASTERISK  &kp SLASH      &kp LEFT_ARROW  &kp RIGHT           &trans        &trans                                &kp DELETE
             >;
         };
 
         SYMBOLS {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&trans     &kp JP_DQUOTE  &trans  &trans  &trans                      &kp JP_AMPERSAND  &kp JP_EQUAL      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE
+&kp JP_AT  &kp JP_QUOTE   &trans  &trans  &trans  &trans      &trans  &trans            &kp JP_BACKQUOTE  &kp JP_LBRACE    &kp JP_RBRACE    &trans
+&trans     &kp JP_COLON   &trans  &trans  &trans  &trans      &trans  &trans            &trans            &kp JP_LBRACKET  &kp JP_RBRACKET  &trans
+&trans     &trans         &trans  &trans  &trans  &trans      &trans  &trans                                                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
