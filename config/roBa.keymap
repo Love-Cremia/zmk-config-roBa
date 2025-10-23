@@ -123,7 +123,7 @@
             bindings = <
 &kp Q    &kp W           &kp E         &kp R                   &kp T                                                                      &kp Y        &kp U  &kp I      &lt 5 O  &lt 6 P
 &kp A    &kp S           &kp D         &lt_to_layer_0 6 F      &kp G                   &trans                       &tog 6                &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&kp Z    &kp X           &kp C         &kp V                   &kp B                   &lt_to_layer_0 6 ESCAPE      &lt 3 JP_UNDERSCORE   &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp Z    &kp X           &kp C         &kp V                   &kp B                   &lt_to_layer_0 6 ESCAPE      &lt 3 MINUS           &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp TAB  &kp INT_HENKAN  &kp CAPSLOCK  &mt LEFT_GUI BACKSPACE  &mt LEFT_ALT BACKSPACE  &mt LCTRL DELETE             &mt LEFT_SHIFT ENTER  &lt 2 SPACE                             &kp JP_YEN
             >;
         };
@@ -149,7 +149,7 @@
         SYMBOLS {
             bindings = <
 &kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp JP_AMPERSAND  &kp JP_EQUAL      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE
-&kp JP_AT        &kp JP_QUOTE   &trans    &trans      &trans       &trans      &trans  &trans            &kp JP_BACKQUOTE  &kp JP_LBRACE    &kp JP_RBRACE    &trans
+&kp JP_AT        &kp JP_QUOTE   &trans    &trans      &trans       &trans      &trans  &trans            &kp JP_BACKQUOTE  &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_UNDERSCORE
 &trans           &kp JP_COLON   &trans    &trans      &trans       &trans      &trans  &trans            &trans            &kp JP_LBRACKET  &kp JP_RBRACKET  &trans
 &trans           &trans         &trans    &trans      &trans       &trans      &trans  &trans                                                                &trans
             >;
