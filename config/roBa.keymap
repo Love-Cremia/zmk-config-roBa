@@ -74,7 +74,7 @@
 
         WinChangeLanguage {
             bindings = <&kp JP_HANZEN>;
-            key-positions = <41 15>;
+            key-positions = <41 27>;
             timeout-ms = <700>;
             require-prior-idle-ms = <20>;
             layers = <0>;
