@@ -86,6 +86,13 @@
             timeout-ms = <100>;
             layers = <0>;
         };
+
+        Click_PJ {
+            bindings = <&mkp MB1>;
+            key-positions = <13 18>;
+            timeout-ms = <100>;
+            layers = <0>;
+        };
     };
 
     macros {
