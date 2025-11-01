@@ -106,10 +106,10 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W  &kp E       &kp R                   &kp T                                                                  &kp Y        &kp U  &lt 5 I    &kp O    &lt 6 P
+&kp Q                  &kp W  &kp E       &kp R                   &kp T                                                                  &kp Y        &kp U  &kp I      &lt 5 O  &lt 6 P
 &kp A                  &kp S  &kp D       &kp F                   &kp G                   &kp CAPSLOCK            &none                  &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
 &kp Z                  &kp X  &kp C       &kp V                   &kp B                   &mt LEFT_SHIFT TAB      &mt RIGHT_SHIFT MINUS  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&lt 3 INTERNATIONAL_4  &mo 4  &kp ESCAPE  &mt LEFT_GUI BACKSPACE  &mt LEFT_ALT BACKSPACE  &mt LCTRL DELETE        &kp ENTER              &lt 2 SPACE                             &lt 3 JP_YEN
+&lt 3 INTERNATIONAL_4  &mo 6  &kp ESCAPE  &mt LEFT_GUI BACKSPACE  &mt LEFT_ALT BACKSPACE  &mt LCTRL DELETE        &kp ENTER              &lt 2 SPACE                             &lt 3 JP_YEN
             >;
         };
 
@@ -140,12 +140,12 @@
             >;
         };
 
-        MOUSE {
+        NoUse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB4  &trans    &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
