@@ -133,10 +133,10 @@
 
         SYMBOLS {
             bindings = <
-&kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp JP_AMPERSAND  &kp JP_EQUAL      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_PIPE
-&kp JP_AT        &kp JP_QUOTE   &trans    &trans      &trans       &trans      &trans  &trans            &kp JP_BACKQUOTE  &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_UNDERSCORE
+&kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp JP_AMPERSAND  &kp JP_EQUAL      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_UNDERSCORE
+&kp JP_AT        &kp JP_QUOTE   &trans    &trans      &trans       &trans      &trans  &trans            &kp JP_BACKQUOTE  &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_PIPE
 &trans           &kp JP_COLON   &trans    &trans      &trans       &trans      &trans  &trans            &trans            &kp JP_LBRACKET  &kp JP_RBRACKET  &kp QUESTION
-&kp JP_EQUAL     &trans         &trans    &trans      &trans       &trans      &trans  &trans                                                                &trans
+&kp JP_EQUAL     &trans         &trans    &trans      &trans       &trans      &trans  &trans                                                                &kp JP_YEN
             >;
         };
 
