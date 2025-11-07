@@ -133,10 +133,10 @@
 
         SYMBOLS {
             bindings = <
-&kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp JP_AMPERSAND  &kp JP_EQUAL      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_UNDERSCORE
-&kp JP_AT        &kp JP_QUOTE   &none     &none       &none        &none       &none   &none             &kp JP_BACKQUOTE  &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_PIPE
-&none            &none          &none     &none       &none        &none       &none   &none             &none             &kp JP_LBRACKET  &kp JP_RBRACKET  &kp QUESTION
-&kp JP_EQUAL     &none          &none     &none       &none        &none       &none   &none                                                                 &kp JP_YEN
+&kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR     &kp PERCENT                            &kp JP_AMPERSAND  &kp JP_EQUAL      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_UNDERSCORE
+&kp JP_AT        &kp JP_QUOTE   &none     &none          &none          &none           &none   &none             &kp JP_BACKQUOTE  &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_PIPE
+&none            &none          &none     &none          &none          &none           &none   &none             &none             &kp JP_LBRACKET  &kp JP_RBRACKET  &kp QUESTION
+&none            &none          &none     &kp BACKSPACE  &kp BACKSPACE  &kp DELETE      &none   &none                                                                 &kp JP_YEN
             >;
         };
 
@@ -151,19 +151,19 @@
 
         SCROLL {
             bindings = <
-&none   &kp HOME  &kp UP_ARROW    &kp END          &kp PAGE_UP                         &none      &none   &none   &none   &none 
-&none   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &none        &none   &none      &none   &none   &none   &none 
-&none   &none     &kp DOWN_ARROW  &none            &none          &kp TAB      &none   &none      &none   &none   &none   &none 
-&none   &none     &none           &none            &none          &none        &none   &kp SPACE                          &none 
+&none   &kp HOME  &kp UP_ARROW    &kp END          &kp PAGE_UP                            &none      &none   &none   &none   &none 
+&none   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &none           &none   &none      &none   &none   &none   &none 
+&none   &none     &kp DOWN_ARROW  &none            &none          &kp TAB         &none   &none      &none   &none   &none   &none 
+&none   &none     &none           &kp BACKSPACE    &kp BACKSPACE  &kp DELETE      &none   &kp SPACE                          &none 
             >;
         };
 
         MOUSE_and_Bluetooth {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                      &none   &mkp MB4  &none     &mkp MB2  &none 
-&none         &none         &none         &none         &none         &none       &none   &none   &mkp MB1  &mkp MB3  &mkp MB5  &none 
-&none         &none         &none         &none         &none         &none       &none   &none   &none     &none     &none     &bt BT_CLR
-&none         &none         &none         &none         &none         &none       &none   &none                                 &bt BT_CLR_ALL
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4                           &none   &mkp MB4  &none     &mkp MB2  &none 
+&none         &none         &none         &none            &none          &none           &none   &none   &mkp MB1  &mkp MB3  &mkp MB5  &none 
+&none         &none         &none         &none            &none          &none           &none   &none   &none     &none     &none     &bt BT_CLR
+&none         &none         &none         &kp BACKSPACE    &kp BACKSPACE  &kp DELETE      &none   &none                                 &bt BT_CLR_ALL
             >;
         };
     };
