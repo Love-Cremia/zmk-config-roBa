@@ -124,19 +124,19 @@
 
         NUMBER_AND_FUNCTION {
             bindings = <
-&kp N1        &kp N2  &kp N3       &kp N4         &kp N5                                         &kp N6           &kp N7        &kp N8     &kp N9   &kp N0
-&kp MINUS     &none   &kp LS(TAB)  &kp JP_PLUS    &kp TAB        &kp JP_TILDE      &kp JP_CARET  &kp JP_ASTERISK  &kp JP_COLON  &kp F10    &kp F11  &kp F12
-&kp F1        &kp F2  &kp F3       &kp F4         &kp F5         &kp F6            &kp F7        &kp F8           &kp F9        &kp COMMA  &kp DOT  &kp SLASH
-&kp JP_EQUAL  &none   &kp ESCAPE   &kp BACKSPACE  &kp BACKSPACE  &kp DELETE        &none         &trans                                             &kp JP_YEN
+&kp N1        &kp N2     &kp N3       &kp N4         &kp N5                                         &kp N6           &kp N7        &kp N8     &kp N9   &kp N0
+&kp MINUS     &kp JP_AT  &kp LS(TAB)  &kp JP_PLUS    &kp TAB        &kp JP_TILDE      &kp JP_CARET  &kp JP_ASTERISK  &kp JP_COLON  &kp F10    &kp F11  &kp F12
+&kp F1        &kp F2     &kp F3       &kp F4         &kp F5         &kp F6            &kp F7        &kp F8           &kp F9        &kp COMMA  &kp DOT  &kp SLASH
+&kp JP_EQUAL  &none      &kp ESCAPE   &kp BACKSPACE  &kp BACKSPACE  &kp DELETE        &none         &trans                                             &kp JP_YEN
             >;
         };
 
         SYMBOLS {
             bindings = <
-&kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR     &kp PERCENT                           &kp JP_AMPERSAND  &kp JP_EQUAL      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_UNDERSCORE
-&kp JP_AT        &kp JP_QUOTE   &none     &none          &none          &none           &none  &none             &kp JP_BACKQUOTE  &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_PIPE
+&kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH  &kp DOLLAR     &kp PERCENT                           &kp JP_AMPERSAND  &kp JP_QUOTE      &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_UNDERSCORE
+&none            &kp JP_AT      &none     &none          &none          &none           &none  &none             &kp JP_BACKQUOTE  &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_PIPE
 &none            &none          &none     &none          &none          &none           &none  &none             &none             &kp JP_LBRACKET  &kp JP_RBRACKET  &kp QUESTION
-&none            &none          &none     &kp BACKSPACE  &kp BACKSPACE  &kp DELETE      &none  &kp SPACE                                                             &kp JP_YEN
+&kp JP_EQUAL     &none          &none     &kp BACKSPACE  &kp BACKSPACE  &kp DELETE      &none  &kp SPACE                                                             &kp JP_YEN
             >;
         };
 
